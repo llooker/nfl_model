@@ -682,14 +682,7 @@
         value: "1"
       }
       drill_fields: [detail*]
-      link: {
-        label: "NFL Stats"
-        url: "/dashboards/4?Team={{ _filters['play_player.team'] | url_encode }}"
-      }
-      link: {
-        label: "Play Analysis"
-        url: "/dashboards/8?Team={{ _filters['play_player.team'] | url_encode }}"
-      }
+
     }
     measure: total_rushing_tds {
       type: sum
