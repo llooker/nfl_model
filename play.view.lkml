@@ -436,7 +436,6 @@ view: play {
   measure: expected_points {
     type: number
     sql: (${td_perc}*7)+(${fg_perc}*3);;
-    value_format: "#.00"
     drill_fields: [description]
 
 

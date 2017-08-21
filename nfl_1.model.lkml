@@ -1,4 +1,4 @@
-connection: "test"
+connection: "nfl_shiggins"
 
 # include all the views
 include: "*.view"

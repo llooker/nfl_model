@@ -765,7 +765,6 @@
 #Passing Stats
     measure: total_passing_yds {
       type: sum
-      drill_fields: [play.description,]
       value_format_name: decimal_2
       group_label: "Passing Stats"
       sql: ${passing_yds} ;;
