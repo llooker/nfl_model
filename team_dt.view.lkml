@@ -1,3 +1,19 @@
+# this view is just here because the URLs used to load the logos are hosted on an image server.
+# The player avatars come directly from NFL.com but for some reason team logos can't be referenced the same way
+view: new_urls {
+  sql_table_name: looker_scratch.new_urls ;;
+
+  dimension: url {
+    type: string
+    sql: ${TABLE}.url ;;
+  }
+
+  measure: count {
+    type: count
+    drill_fields: []
+  }
+}
+
 view: team {
   derived_table: {
     sql: SELECT
@@ -12,8 +28,7 @@ view: team {
       ORDER BY 1
       LIMIT 500
        ;;
-      indexes: ["team_id"]
-      persist_for: "24 hours"
+      # indexes: ["team_id"] re-add if persisting, but this is tiny data, no real need to persist ATM
   }
 
   measure: count {

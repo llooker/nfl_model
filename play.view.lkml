@@ -1,3 +1,7 @@
+# This is different from play_player in that it's a description of the play itself, not a summary of the stats involved.
+# After some playing, I managed to infer the actual yardline, YTG and expected points stuff. Kind of interesting when doing score forecasting.
+# I'm trying to get some real time % probability stuff going on while games are being played using Burnt Sushi's NFL Game Python and some Vegas line stuff.
+
 view: play {
   sql_table_name: public.play ;;
 

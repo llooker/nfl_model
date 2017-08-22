@@ -1,5 +1,7 @@
 include: "player.view.lkml"
 
+# The way this works is that every player in the NFL has a player_id and esb_id. The esb_id exists on each players page and is used for referencing their individual portrait.
+# To get this I had to do some Python scraping of the NFL site and load this ID via ETL and then reference it via a static URL below.
 view: player_avatars {
   extends: [player]
 

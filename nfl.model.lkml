@@ -194,6 +194,14 @@ explore: dt_quarterback_facts {
 explore: player {}
 
 explore: team {
+  conditionally_filter: {
+    filters: {
+      field: play_player.team
+      value: "UNK"
+    }
+    unless: [team_id]
+    # I need to find a better way to have the team logo default to the NFL logo rather than setting the team to 'UNK'
+  }
   join: play_player {
     type: left_outer
     sql_on: ${team.team_id}=${play_player.team} ;;
