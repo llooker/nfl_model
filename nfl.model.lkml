@@ -1,6 +1,7 @@
 connection: "nfl_shiggins"
 
 # Bughunt Git Branch Test 1
+# Rich's dev branch committed this line
 
 # include all the views
 include: "*.view"
