@@ -1,6 +1,7 @@
 connection: "nfl_shiggins"
 
 # Bughunt Git Branch Test 1
+# sweet ass stuff this git branching
 
 # include all the views
 include: "*.view"
