@@ -4,6 +4,8 @@ connection: "nfl_shiggins"
 # sweet ass stuff this git branching, I resolved my conflict
 # Rich's dev branch committed this line
 
+# Now I'm gonna sudo after this local commit
+
 # include all the views
 include: "*.view"
 
