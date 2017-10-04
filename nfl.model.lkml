@@ -1,7 +1,8 @@
 connection: "nfl_shiggins"
 
 # Bughunt Git Branch Test 1
-# sweet ass stuff this git branching
+# sweet ass stuff this git branching, I resolved my conflict
+# Rich's dev branch committed this line
 
 # include all the views
 include: "*.view"
